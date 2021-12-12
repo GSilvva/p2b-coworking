@@ -44,5 +44,9 @@ new Swiper(".home__empresas .swiper", {
         1000: {
             slidesPerView: 5,
         }
-    }
+    },
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+    },
 });

@@ -1,0 +1,780 @@
+.servico {
+    &--coworking {
+        .servico {
+            &__banner__mosaico__dir h2 {
+                background: $green;
+            }
+            &__beneficios {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            figure {
+                                background: $green;
+                            }
+                        }
+                    }
+                }
+            }
+            &__destaque {
+                background: $green;
+                @media screen and (max-width: $tablet) {
+                    margin-top: -64px;
+                }
+            }
+        }
+        .img-texto__carrossel {
+            &::before {
+                background: linear-gradient(75deg, rgba(151, 201, 60, 0) 0%, rgba(151, 201, 60, 0.16) 100%);
+            }
+        }
+        .button {
+            background: $green;
+        }
+        .table__desk__header__card .button--outline:hover {
+            background: $green;
+        }
+        ::selection {
+            background: $green;
+        }
+    }
+    &--sala-reuniao {
+        .servico {
+            &__banner__mosaico__dir h2 {
+                background: $blue;
+            }
+            &__beneficios {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            figure {
+                                background: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+            &__destaque {
+                background: $blue;
+            }
+        }
+        .img-texto__carrossel {
+            &::before {
+                background: linear-gradient(75deg, rgba(5, 78, 143, 0) 0%, rgba(5, 78, 143, 0.16) 100%);
+            }
+        }
+        .button {
+            background: $blue;
+        }
+        .table__desk__header__card .button--outline:hover {
+            background: $blue;
+        }
+        ::selection {
+            background: $blue;
+        }
+    }
+    &--escritorio-virtual {
+        .servico {
+            &__banner__mosaico__dir h2 {
+                background: $orange;
+            }
+            &__beneficios {
+                header h2 {
+                    max-width: 650px;
+                }
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            figure {
+                                background: $orange;
+                            }
+                        }
+                    }
+                }
+            }
+            &__destaque {
+                background: $orange;
+                padding: 80px 0 330px 0;
+                margin: 0 0 -318px 0;
+                @media screen and (max-width: $tablet) {
+                    padding: 64px 0 330px 0;
+                    margin: 0 0 -340px 0;
+                }
+            }
+        }
+        .img-texto__carrossel {
+            &::before {
+                background: linear-gradient(75deg, rgba(248, 152, 28, 0) 0%, rgba(248, 152, 28, 0.16) 100%);
+            }
+        }
+        .button {
+            background: $orange;
+        }
+        .table__desk__header__card .button--outline:hover {
+            background: $orange;
+        }
+        .table__desk__title {
+            top: 96px;
+        }
+        .table__controls {
+            input {
+                &:checked {
+                    & ~ span:first-of-type {
+                        color: $orange;
+                        background: $white;
+                    }
+                    & ~ span:last-of-type {
+                        color: $white;
+                    }
+                }
+            }
+            span {
+                &:first-of-type {
+                    color: $white;
+                }
+                &:last-of-type {
+                    background: $white;
+                    color: $orange;
+                }
+            }
+        }
+        ::selection {
+            background: $orange;
+        }
+    }
+    &--home-office-profissional {
+        .servico {
+            &__banner__mosaico__dir h2 {
+                background: $pink;
+            }
+            &__beneficios {
+                header h2 {
+                    max-width: 650px;
+                }
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            figure {
+                                background: $pink;
+                            }
+                        }
+                    }
+                }
+            }
+            &__destaque {
+                background: $pink;
+                padding: 80px 0 330px 0;
+                margin: 0 0 -318px 0;
+                @media screen and (max-width: $tablet) {
+                    padding: 64px 0 330px 0;
+                    margin: 0 0 -340px 0;
+                }
+            }
+        }
+        .img-texto__carrossel {
+            &::before {
+                background: linear-gradient(75deg, rgba(238, 60, 99, 0) 0%, rgba(238, 60, 99, 0.16) 100%);
+            }
+        }
+        .button {
+            background: $pink;
+        }
+        .table__desk__header__card .button--outline:hover {
+            background: $pink;
+        }
+        .table__controls {
+            input {
+                &:checked {
+                    & ~ span:first-of-type {
+                        color: $pink;
+                        background: $white;
+                    }
+                    & ~ span:last-of-type {
+                        color: $white;
+                    }
+                }
+            }
+            span {
+                &:first-of-type {
+                    color: $white;
+                }
+                &:last-of-type {
+                    background: $white;
+                    color: $pink;
+                }
+            }
+        }
+        ::selection {
+            background: $pink;
+        }
+    }
+    &--salas-privativas {
+        .servico {
+            &__banner__mosaico__dir h2 {
+                background: $purple;
+            }
+            &__beneficios {
+                margin: 32px 0 120px 0;
+                @media screen and (max-width: $tablet) {
+                    margin: 0 0 40px 0;
+                }
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            figure {
+                                background: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+            &__destaque {
+                background: $purple;
+            }
+        }
+        .img-texto__texto {
+            h2 {
+                font-weight: 300;
+                strong {
+                    display: block;
+                }
+            }
+        }
+        .img-texto__carrossel {
+            &::before {
+                background: linear-gradient(75deg, rgba(122, 87, 164, 0.16) 0%, rgba(122, 87, 164, 0) 100%) !important;
+            }
+        }
+        .button {
+            background: $purple;
+        }
+        .table__desk__header__card .button--outline:hover {
+            background: $purple;
+        }
+        .table__controls {
+            input {
+                &:checked {
+                    & ~ span:first-of-type {
+                        color: $purple;
+                        background: $white;
+                    }
+                    & ~ span:last-of-type {
+                        color: $white;
+                    }
+                }
+            }
+            span {
+                &:first-of-type {
+                    color: $white;
+                }
+                &:last-of-type {
+                    background: $white;
+                    color: $purple;
+                }
+            }
+        }
+        ::selection {
+            background: $purple;
+        }
+    }
+    &__banner {
+        @media screen and (max-width: $tablet) {
+            margin: 0 0 56px 0;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            @media screen and (max-width: $tablet) {
+                flex-direction: column-reverse;
+            }
+            & > .servico__banner__compl-text {
+                display: none;
+                @media screen and (max-width: $tablet) {
+                    display: block;
+                }
+            }
+        }
+        &__mosaico {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            margin: 0 0 0 -144px;
+            z-index: 1;
+            @media screen and (max-width: $tablet) {
+                display: block;
+                margin: 0 0 0 -20px;
+                width: calc(100% + 40px);
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+            &__esq {
+                margin: 105px 24px 0 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                img {
+                    &:first-of-type {
+                        max-width: 200px;
+                        margin: 0 0 24px 0;
+                    }
+                    &:last-of-type {
+                        max-width: 280px;
+                    }
+                }
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
+            }
+            &__dir {
+                figure {
+                    position: relative;
+                    max-width: 420px;
+                    width: 100%;
+                    img {
+                        &:first-of-type {
+                            height: 550px;
+                            width: 100%;
+                            @media screen and (max-width: $tablet) {
+                                height: auto;
+                            }
+                        }
+                        &:last-of-type {
+                            width: auto;
+                            object-fit: initial;
+                            position: absolute;
+                            left: -72px;
+                            top: 89px;
+                            @media screen and (max-width: $tablet) {
+                                display: none;
+                            }
+                        }
+                    }
+                    .button {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        border-radius: 12px 12px 0 0;
+                        @media screen and (max-width: $tablet) {
+                            width: 100%;
+                            right: 0;
+                            bottom: 0;
+                            justify-content: center;
+                        }
+                        &::before {
+                            content: url("../../assets/general/arrow-button-unrounded.svg");
+                        }
+                    }
+                }
+                h2 {
+                    margin: 24px 0 120px 0;
+                    padding: 14px 24px;
+                    width: 100%;
+                    background: $grey;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    color: $white;
+                    @media screen and (max-width: $tablet) {
+                        justify-content: center;
+                        margin: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 24px;
+                        width: auto;
+                        padding: 6px 12px;
+                    }
+                    span {
+                        font: 300 20px/1 $font;
+                        color: rgba(255, 255, 255, .5);
+                        display: block;
+                        padding: 16px 0 0 4px;
+                        @media screen and (max-width: $tablet) {
+                            padding-top: 10px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        &__text {
+            max-width: 545px;
+            width: 100%;
+            padding: 48px 0 0 48px;
+            position: relative;
+            z-index: 5;
+            @media screen and (max-width: $tablet) {
+                padding: 0 0 32px 0;
+                max-width: 100%;
+            }
+            h1 {
+                margin-left: calc(-48px - 24px);
+                margin-bottom: 16px;
+                @media screen and (max-width: $tablet) {
+                    margin-left: 0;
+                }
+            }
+            & > p {
+                font-size: 18px;
+            }
+            .servico__banner__compl-text {
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
+            }
+        }
+        &__compl-text {
+            margin: 40px 0 0 0;
+            @media screen and (max-width: $tablet) {
+                margin: 32px 0 0 0;
+            }
+            h2 {
+                margin: 0 0 24px 0;
+            }
+            p {
+                &:not(:last-of-type) {
+                    margin: 0 0 24px 0;
+                }
+                &:last-of-type {
+                    margin: 0 0 96px 0;
+                    @media screen and (max-width: $tablet) {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .button--outline {
+        background: unset;
+    }
+    .img-texto__carrossel .swiper .swiper-slide {
+        max-width: 520px;
+        img {
+            height: 500px;
+            @media screen and (max-width: $tablet) {
+                height: auto;
+            }
+        }
+    }
+    &__beneficios {
+        margin: 0 0 120px 0;
+        @media screen and (max-width: $tablet) {
+            margin: 0 0 40px 0;
+        }
+        header {
+            margin: 0 0 48px 0;
+            @media screen and (max-width: $tablet) {
+                margin: 0 0 32px 0;
+            }
+            * {
+                text-align: center;
+            }
+            h2 {
+                max-width: 580px;
+                width: 100%;
+                margin: 0 auto 24px auto;
+            }
+        }
+        &--left {
+            header {
+                display: flex;
+                align-items: flex-end;
+                margin: 0 0 56px 0;
+                @media screen and (max-width: $tablet) {
+                    margin: 0 0 32px 0;
+                    display: block;
+                }
+                * {
+                    text-align: left;
+                }
+                aside {
+                    margin: 0 64px 0 0;
+                    @media screen and (max-width: $tablet) {
+                        margin: 0 0 24px 0;
+                    }
+                }
+            }
+        }
+        .swiper {
+            @media screen and (max-width: $tablet) {
+                width: calc(100% + 40px);
+                margin-left: -20px;
+            }
+            .swiper-wrapper {
+                justify-content: center;
+                @media screen and (max-width: $tablet) {
+                    justify-content: initial;
+                }
+                .swiper-slide {
+                    max-width: 220px;
+                    &:not(:last-of-type) {
+                        margin: 0 16px 0 0;
+                        @media screen and (max-width: $tablet) {
+                            margin: 0;
+                        }
+                    }
+                    * {
+                        text-align: center;
+                    }
+                    figure {
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: $grey;
+                        margin: 0 auto;
+                    }
+                    h5 {
+                        font: 800 20px/1.2 $font;
+                        margin: 28px 0 16px 0;
+                        @media screen and (max-width: $tablet) {
+                            font-size: 18px;
+                            margin: 24px 0 12px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__destaque {
+        background: $grey;
+        position: relative;
+        padding: 80px 0 240px 0;
+        margin: 0 0 -162px 0;
+        z-index: 1;
+        @media screen and (max-width: $tablet) {
+            margin: 0 0 -200px 0;
+            padding: 64px 0 240px 0;
+        }
+        &::before,
+        &::after {
+            position: absolute;
+            z-index: 1;
+            @media screen and (max-width: $tablet) {
+                display: none;
+            }
+        }
+        &::before {
+            content: url("../../assets/pages/servicos/graph-top.svg");
+            top: 0;
+            left: 0;
+        }
+        &::after {
+            right: 0;
+            content: url("../../assets/pages/servicos/graph-bottom.svg");
+        }
+        .container {
+            position: relative;
+            z-index: 5;
+            max-width: 960px;
+            * {
+                text-align: center;
+                color: $white;
+            }
+            h2 {
+                max-width: 770px;
+                width: 100%;
+                margin: 0 auto 32px auto;
+            }
+            p {
+                font: 300 16px/170% $font;
+                @media screen and (max-width: $tablet) {
+                    font: 300 15px/160% $font;
+                }
+            }
+            section {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    &__photos {
+        .swiper {
+            .swiper-slide {
+                max-width: 475px;
+                width: 100%;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 475px;
+                    @media screen and (max-width: $tablet) {
+                        height: auto;
+                    }
+                }
+            }
+        }
+        &__controls {
+            margin: 40px 0 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button {
+                margin: 0 12px;
+            }
+        }
+    }
+    &__comparables {
+        & > h2 {
+            text-align: center;
+            max-width: 820px;
+            width: 100%;
+            margin: 0 auto 112px auto;
+            @media screen and (max-width: $tablet) {
+                margin-bottom: 16px;
+            }
+        }
+        &__item {
+            &:not(:last-of-type) {
+                margin: 0 0 144px 0;
+                @media screen and (max-width: $tablet) {
+                    margin: 0 0 64px 0;
+                }
+            }
+            &:nth-of-type(odd) {
+                .img-texto {
+                    flex-direction: row-reverse;
+                    @media screen and (max-width: $tablet) {
+                        flex-direction: column-reverse;
+                    }
+                    .img-texto__carrossel {
+                        &::before {
+                            border-radius: 400px 0 0 0;
+                            left: -48px;
+                            @media screen and (max-width: $tablet) {
+                                left: 0;
+                            }
+                        }
+                        .controls {
+                            left: 20px;
+                        }
+                    }
+                    .img-texto__texto {
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: 0 110px 0 0;
+                        @media screen and (max-width: $tablet) {
+                            padding: 0 20px 32px 20px;
+                        }
+                    }
+                }
+            }
+            &:nth-of-type(even) {
+                .img-texto__carrossel {
+                    &::before {
+                        background: linear-gradient(75deg, rgba(122, 87, 164, 0) 0%, rgba(122, 87, 164, 0.16) 100%) !important;
+                    }
+                }
+            }
+            &.open {
+                .img-texto__carrossel {
+                    margin: 0 0 128px 0;
+                    @media screen and (max-width: $tablet) {
+                        margin: 0 0 64px 0;
+                    }
+                    &::before {
+                        height: 758px;
+                    }
+                }
+                .table {
+                    display: block;
+                }
+            }
+            .table {
+                margin-top: -40px;
+                display: none;
+                @media screen and (max-width: $tablet) {
+                    margin-top: -32px;
+                }
+                &__desk {
+                    &__title {
+                        top: 56px;
+                        h4 {
+                            color: $black;
+                        }
+                    }
+                    &__header {
+                        &__card {
+                            &:last-of-type {
+                                background: $purple;
+                                figure {
+                                    width: 80%;
+                                }
+                                h4 {
+                                    color: $white;
+                                }
+                            }
+                            h4 {
+                                font: 800 18px/25px $font;
+                                font-size: 18px;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                } 
+                &__mob {
+                    h4 {
+                        color: $black;
+                    }
+                    .swiper {
+                        .swiper-slide {
+                            &.principal {
+                                header {
+                                    margin: 0 0 24px -20px;
+                                    background: $purple;
+                                    width: calc(100% + 40px);
+                                    figure {
+                                        width: 80%;
+                                    }
+                                    h4 {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                            &.normal {
+                                ul {
+                                    li {
+                                        &:last-of-type {
+                                            strong {
+                                                background: $lightGrey;
+                                                color: $black;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ul {
+                        li {
+                            &:last-of-type {
+                                span {
+                                    strong {
+                                        background: $purple;
+                                        color: $white;
+                                        padding: 5px;
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+            .img-texto {
+                margin: 0 !important;
+                align-items: flex-start;
+                &__texto {
+                    padding-top: 64px !important;
+                    @media screen and (max-width: $tablet) {
+                        padding-top: 32px !important;
+                    }
+                }
+            }
+        }
+    }
+}

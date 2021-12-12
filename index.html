@@ -63,6 +63,8 @@
                 </div>
             </aside>
             <aside class="home__banner__images">
+                <img data-icon src="./assets/pages/home/graph-banner-top.svg" alt="Graphism" class="home__banner__images__graph-top">
+                <img data-icon src="./assets/pages/home/graph-banner-bottom.svg" alt="Graphism" class="home__banner__images__graph-bottom">
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -310,15 +312,15 @@
                     <form>
                         <fieldset>
                             <label for="nome">Nome</label>
-                            <input id="nome" type="text">
+                            <input required id="nome" type="text">
                         </fieldset>
                         <fieldset>
                             <label for="email">E-mail</label>
-                            <input id="email" type="email">
+                            <input required id="email" type="email">
                         </fieldset>
                         <fieldset>
                             <label for="celularTelefone">Celular ou Telefone</label>
-                            <input id="celularTelefone" type="tel">
+                            <input required id="celularTelefone" type="tel">
                         </fieldset>
                         <button class="button" type="submit">Enviar</button>
                     </form>
@@ -379,6 +381,16 @@
             </footer>
         </div>
     </footer>
+
+    <article class="modal-form">
+        <div class="container">
+            <div>
+                <h3>Mensagem enviada com sucesso!</h2>
+                <p>Não se preocupe, responderemos em até 24 horas.</p>
+                <button class="button button--simple" type="button">Fechar</button>
+            </div>
+        </div>
+    </article>
 
     <!-- <article class="cookies">
         <div class="container">

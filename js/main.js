@@ -57,3 +57,35 @@ unidadesDisponiveis.forEach(unidade => {
     unidadesContainer.classList.remove("open");
   });
 });
+
+// TABLE
+if(document.querySelector(".table")) {
+  new Swiper(".table .swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 12,
+    loop: true,
+    centeredSlides: true,
+    autoHeight: true
+  });
+}
+
+// ANIMATION SCROLL ELEMENTS
+const icons = document.querySelectorAll("[data-icon]");
+if(icons.length > 0) {
+  icons.forEach(icon => {
+    window.addEventListener("scroll", () => {
+      icon.style.transform = `translate3d(0px, -${window.pageYOffset}px, 0px)`;
+    });
+  });
+}
+
+// MODAL SEND FORM
+const form = document.querySelector("form");
+const modalForm = document.querySelector(".modal-form");
+const closeModalForm = modalForm.querySelector("button");
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  window.location.href = window.location.href += "#mensagemEnviada";
+  modalForm.classList.add("open");
+});
+closeModalForm.addEventListener("click", () => modalForm.classList.remove("open"));

@@ -1,0 +1,83 @@
+.servicos {
+    padding: 0;
+    &__banner {
+        margin: 0 0 120px 0;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(64deg, rgba(5, 78, 143, 0) 0%, rgba(5, 78, 143, 0.05) 100%);
+        position: relative;
+        padding: 140px 0 0 0;
+        @media screen and (max-width: $tablet) {
+            display: block;
+            background: linear-gradient(64deg, rgba(5, 78, 143, 0) 0%, rgba(5, 78, 143, 0.05) 100%);
+            margin: 0 0 32px 0;
+            padding: 96px 0 32px 0;
+        }
+        &::after {
+            content: url("../../assets/pages/servicos/graph-banner.svg");
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            position: relative;
+            z-index: 5;
+            @media screen and (max-width: $tablet) {
+                height: auto;
+            }
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 620px;
+            width: 100%;
+            position: relative;
+            z-index: 5;
+            padding: 0 0 0 48px;
+            @media screen and (max-width: $tablet) {
+                padding: 0 20px;
+            }
+            h1 {
+                margin-left: calc(-48px + -24px);
+                letter-spacing: -0.01em;
+                @media screen and (max-width: $tablet) {
+                    margin-left: 0;
+                    margin-top: -16px;
+                }
+                span {
+                    display: block;
+                }
+            }
+            p {
+                max-width: 450px;
+                width: 100%;
+                margin: 24px 0 32px 0;
+                font: 300 18px/170% $font;
+            }
+        }
+    }
+    &__section {
+        & > h2 {
+            text-align: center;
+            margin: 0 0 112px 0;
+            font: 800 46px/130% $font;
+            @media screen and (max-width: $tablet) {
+                font-size: 32px;
+                margin: 0 0 40px 0;
+            }
+        }
+        .img-texto {
+            &:nth-of-type(even) {
+                .img-texto__carrossel::before {
+                    background: linear-gradient(75deg, rgba(122, 87, 164, 0.16) 0%, rgba(122, 87, 164, 0) 100%) !important;
+                }
+            }
+        }
+    }
+}
