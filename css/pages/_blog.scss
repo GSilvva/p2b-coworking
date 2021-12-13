@@ -1,0 +1,386 @@
+.blog {
+    @media screen and (max-width: $tablet) {
+        padding: 80px 0 0 0;
+    }
+    &__banner {
+        background: $blue;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0 0 144px 0;
+        @media screen and (max-width: $tablet) {
+            display: block;
+            margin: 0 0 64px 0;
+        }
+        &::before {
+            content: url("../../assets/pages/blog/graph-banner.svg");
+            position: absolute;
+            bottom: -4px;
+            right: 0;
+            z-index: 1;
+        }
+        & > aside {
+            width: 100%;
+            position: relative;
+            z-index: 5;
+            &:last-of-type {
+                padding: 0 0 0 56px;
+                @media screen and (max-width: $tablet) {
+                    padding: 32px 20px 48px 20px;
+                }
+            }
+            & > img {
+                z-index: 5;
+                &:first-of-type {
+                    position: absolute;
+                    top: -32px;
+                    right: 144px;
+                    @media screen and (max-width: $tablet) {
+                        display: none;
+                    }
+                }
+                &:last-of-type {
+                    position: absolute;
+                    bottom: -64px;
+                    left: 128px;
+                    @media screen and (max-width: $tablet) {
+                        display: none;
+                    }
+                }
+            }
+            figure {
+                width: 100%;
+                min-height: 630px;
+                position: relative;
+                z-index: 5;
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            article {
+                * {
+                    color: $white;
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 540px;
+                width: 100%;
+                h4 {
+                    font: 800 24px/1 $font;
+                    margin: 40px 0 32px 0;
+                    @media screen and (max-width: $tablet) {
+                        margin: 32px 0 24px 0;
+                        font-size: 20px;
+                    }
+                }
+                ul {
+                    li {
+                        &:not(:last-of-type) {
+                            border-bottom: 1px solid rgba(255, 255, 255, .16);
+                            padding: 0 0 16px 0;
+                            margin: 0 0 16px 0;
+                        }
+                        a {
+                            display: block;
+                            &:hover {
+                                h5 {
+                                    color: $green
+                                }
+                            }
+                            h5 {
+                                font: 600 18px/160% $font;
+                                margin: 0 0 8px 0;
+                                transition: 300ms ease;
+                                @media screen and (max-width: $tablet) {
+                                    font-size: 17px;
+                                }
+                            }
+                            footer {
+                                display: flex;
+                                align-items: center;
+                                aside {
+                                    display: flex;
+                                    align-items: center;
+                                    &:not(:last-of-type) {
+                                        margin: 0 32px 0 0;
+                                    }
+                                    img {
+                                        margin: 0 12px 0 0;
+                                    }
+                                    span {
+                                        font: 400 15px/1 $font;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__others {
+        &__header {
+            margin: 0 0 64px 0;
+            @media screen and (max-width: $tablet) {
+                margin: 0 0 40px 0;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media screen and (max-width: $celular) {
+                    display: block;
+                }
+            }
+            form {
+                display: flex;
+                align-items: center;
+                position: relative;
+                max-width: 400px;
+                width: 100%;
+                @media screen and (max-width: $celular) {
+                    margin: 16px 0 0 0;
+                }
+                input {
+                    height: 48px;
+                    display: block;
+                    padding-right: 56px;
+                }
+                button {
+                    position: absolute;
+                    top: 0;
+                    right: 0;                    
+                }
+            }
+        }
+    }
+}
+
+.artigo {
+    @media screen and (max-width: $tablet) {
+        padding: 80px 0 0 0;
+    }
+    &__banner {
+        background: $blue;
+        position: relative;
+        z-index: 1;
+        height: 480px;
+        @media screen and (max-width: $tablet) {
+            height: auto;
+        }
+        &::before {
+            content: url("../../assets/pages/blog/graph-left.svg");
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            @media screen and (max-width: $tablet) {
+                display: none;
+            }
+        }
+        &::after {
+            content: url("../../assets/pages/blog/graph-right.svg");
+            position: absolute;
+            right: 0;
+            bottom: -4px;
+            z-index: 1;
+            @media screen and (max-width: $tablet) {
+                display: none;
+            }
+        }
+        .container {
+            height: 100%;
+            @media screen and (max-width: $tablet) {
+                padding: 0;
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+                position: relative;
+                z-index: 5;
+            }
+        }
+    }
+    &__content {
+        .container {
+            max-width: 800px;
+        }
+        &__header {
+            margin: -112px 0 0 0;
+            position: relative;
+            z-index: 5;
+            background: $white;
+            box-shadow: 0px 24px 72px rgba(0, 0, 0, 0.04);
+            border-radius: 16px;
+            padding: 40px;
+            @media screen and (max-width: $tablet) {
+                padding: 24px 20px;
+            }
+            header {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 0 0 20px 0;
+                @media screen and (max-width: $tablet) {
+                    margin: 0 0 16px 0;
+                }
+                h6 {
+                    background: rgba(151, 201, 60, 0.16);
+                    color: $green;
+                    border-radius: 1000px;
+                    padding: 8px 16px;
+                    text-transform: uppercase;
+                    font: 700 14px/1 $font;
+                    display: inline-block;
+                    &:not(:last-of-type) {
+                        margin: 0 12px 0 0;
+                    }
+                }
+            }
+            h1 {
+                font: 800 32px/130% $font;
+                @media screen and (max-width: $tablet) {
+                    font-size: 20px;
+                }
+            }
+            footer {
+                display: flex;
+                align-items: center;
+                margin: 24px 0 0 0;
+                @media screen and (max-width: $tablet) {
+                    flex-wrap: wrap;
+                    margin: 20px 0 0 0;
+                }
+                aside {
+                    display: flex;
+                    align-items: center;
+                    &:first-of-type {
+                        @media screen and (max-width: $tablet){
+                            width: 100%;
+                            margin-bottom: 20px !important;
+                        }
+                        img {
+                            border-radius: 1000px;
+                            object-fit: cover;
+                            width: 36px;
+                            height: 36px;
+                        }
+                    }
+                    &:not(:last-of-type) {
+                        margin: 0 32px 0 0;
+                    }
+                    img {
+                        margin: 0 12px 0 0;
+                    }
+                    span {
+                        font: 400 17px/1 $font;
+                    }
+                }
+            }
+        }
+        &__text {
+            margin: 48px 0 0 0;
+            @media screen and (max-width: $tablet) {
+                margin: 24px 0 0 0;
+            }
+            h2,
+            h3,
+            h4 {
+                font-weight: 800;
+                margin: 0 0 32px 0;
+                @media screen and (max-width: $tablet) {
+                    margin: 0 0 24px 0;
+                }
+            }
+            h4 {
+                font: 800 26px/150% $font;
+                @media screen and (max-width: $tablet) {
+                    font-size: 22px;
+                }
+            }
+            p {
+                color: $grey;
+                &:not(:last-of-type) {
+                    margin: 0 0 32px 0;
+                    @media screen and (max-width: $tablet) {
+                        margin: 0 0 24px 0;
+                    }
+                }
+                a {
+                    color: $green;
+                    font-weight: 700;
+                }
+            }
+            ul {
+                margin: 0 0 32px 0;
+                @media screen and (max-width: $tablet) {
+                    margin: 0 0 24px 0;
+                }
+                li {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        min-width: 6px;
+                        height: 6px;
+                        background: $grey;
+                        border-radius: 1000px;
+                        position: absolute;
+                        top: 9px;
+                        left: 0;
+                    }
+                    &:not(:last-of-type) {
+                        margin: 0 0 8px 0;
+                    }
+                    span {
+                        display: block;
+                        font: 300 17px/170% $font;
+                        padding: 0 0 0 calc(16px + 7px);
+                        strong {
+                            color: $grey;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            img {
+                width: 100%;
+            }
+            figure {
+                display: block;
+                margin: 40px 0;
+                @media screen and (max-width: $tablet) {
+                    margin: 32px 0;
+                }
+                img {
+                    width: 100%;
+                }
+                figcaption {
+                    color: $grey;
+                    font: 300 15px/140% $font;
+                    text-align: center;
+                    margin: 24px 0 0 0;
+                }
+            }
+        }
+    }
+    &__others {
+        margin: 144px 0 0 0;
+        @media screen and (max-width: $tablet) {
+            margin: 80px 0 0 0;
+        }
+        h2 {
+            text-align: center;
+            margin: 0 0 64px 0;
+            @media screen and (max-width: $tablet) {
+                margin: 0 0 40px 0;
+            }
+        }
+    }
+}
