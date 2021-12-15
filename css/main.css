@@ -741,7 +741,7 @@
 }
 
 .servico--home-office-profissional .servico__banner__mosaico__dir h2 {
-  background: #ee3c63;
+  background: #2ea8e0;
 }
 
 .servico--home-office-profissional .servico__beneficios header h2 {
@@ -749,11 +749,11 @@
 }
 
 .servico--home-office-profissional .servico__beneficios .swiper .swiper-wrapper .swiper-slide figure {
-  background: #ee3c63;
+  background: #2ea8e0;
 }
 
 .servico--home-office-profissional .servico__destaque {
-  background: #ee3c63;
+  background: #2ea8e0;
   padding: 80px 0 330px 0;
   margin: 0 0 -318px 0;
 }
@@ -766,19 +766,23 @@
 }
 
 .servico--home-office-profissional .img-texto__carrossel::before {
-  background: linear-gradient(75deg, rgba(238, 60, 99, 0) 0%, rgba(238, 60, 99, 0.16) 100%);
+  background: linear-gradient(75deg, rgba(46, 168, 224, 0) 0%, rgba(46, 168, 224, 0.16) 100%);
 }
 
 .servico--home-office-profissional .button {
-  background: #ee3c63;
+  background: #2ea8e0;
 }
 
 .servico--home-office-profissional .table__desk__header__card .button--outline:hover {
-  background: #ee3c63;
+  background: #2ea8e0;
+}
+
+.servico--home-office-profissional .table__desk__title {
+  top: 96px;
 }
 
 .servico--home-office-profissional .table__controls input:checked ~ span:first-of-type {
-  color: #ee3c63;
+  color: #2ea8e0;
   background: #FFFFFF;
 }
 
@@ -792,7 +796,7 @@
 
 .servico--home-office-profissional .table__controls span:last-of-type {
   background: #FFFFFF;
-  color: #ee3c63;
+  color: #2ea8e0;
 }
 
 .servico--home-office-profissional ::-moz-selection {
@@ -1682,6 +1686,7 @@
 .blog__banner > aside article h4 {
   font: 800 24px/1 "Manrope", sans-serif;
   margin: 40px 0 32px 0;
+  color: #2ea8e0;
 }
 
 @media screen and (max-width: 980px) {
@@ -1742,9 +1747,11 @@
 
 .blog__banner > aside article ul li a footer aside img {
   margin: 0 12px 0 0;
+  opacity: .5;
 }
 
 .blog__banner > aside article ul li a footer aside span {
+  opacity: .5;
   font: 400 15px/1 "Manrope", sans-serif;
 }
 
@@ -1816,7 +1823,7 @@
   background: #054e8f;
   position: relative;
   z-index: 1;
-  height: 480px;
+  height: 360px;
 }
 
 @media screen and (max-width: 980px) {
@@ -1999,17 +2006,23 @@
   }
 }
 
+.artigo__content__text h1,
 .artigo__content__text h2,
 .artigo__content__text h3,
-.artigo__content__text h4 {
+.artigo__content__text h4,
+.artigo__content__text h5,
+.artigo__content__text h6 {
   font-weight: 800;
   margin: 0 0 32px 0;
 }
 
 @media screen and (max-width: 980px) {
+  .artigo__content__text h1,
   .artigo__content__text h2,
   .artigo__content__text h3,
-  .artigo__content__text h4 {
+  .artigo__content__text h4,
+  .artigo__content__text h5,
+  .artigo__content__text h6 {
     margin: 0 0 24px 0;
   }
 }
@@ -2021,6 +2034,26 @@
 @media screen and (max-width: 980px) {
   .artigo__content__text h4 {
     font-size: 22px;
+  }
+}
+
+.artigo__content__text h5 {
+  font: 800 22px/150% "Manrope", sans-serif;
+}
+
+@media screen and (max-width: 980px) {
+  .artigo__content__text h5 {
+    font-size: 18px;
+  }
+}
+
+.artigo__content__text h6 {
+  font: 800 18px/150% "Manrope", sans-serif;
+}
+
+@media screen and (max-width: 980px) {
+  .artigo__content__text h6 {
+    font-size: 16px;
   }
 }
 
@@ -2152,6 +2185,10 @@
 ::selection {
   background: #2ea8e0;
   color: #FFFFFF;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body > main {
@@ -3325,13 +3362,35 @@ button {
 }
 
 .contato aside section div h4,
-.contato aside section div button {
+.contato aside section div h4 * {
   text-align: left;
   font: 600 16px/160% "Manrope", sans-serif;
 }
 
 @media screen and (max-width: 980px) {
   .contato aside section div h4,
+  .contato aside section div h4 * {
+    font-size: 15px;
+  }
+}
+
+.contato aside section div h4 a,
+.contato aside section div h4 * a {
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.contato aside section div h4 a:hover,
+.contato aside section div h4 * a:hover {
+  color: #2ea8e0;
+}
+
+.contato aside section div button {
+  text-align: left;
+  font: 600 16px/160% "Manrope", sans-serif;
+}
+
+@media screen and (max-width: 980px) {
   .contato aside section div button {
     font-size: 15px;
   }
@@ -3754,7 +3813,7 @@ button {
   margin: 0 0 32px 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 116px;
+  top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4152,6 +4211,15 @@ button {
 
 .button--outline--pink:hover {
   background: #ee3c63;
+}
+
+.button--outline--lightBlue {
+  border-color: #2ea8e0;
+  color: #2ea8e0;
+}
+
+.button--outline--lightBlue:hover {
+  background: #2ea8e0;
 }
 
 .button--graph:hover {
@@ -4594,5 +4662,24 @@ button {
   font: 300 15px/140% "Manrope", sans-serif;
   text-align: center;
   margin: 24px 0 0 0;
+}
+
+.btn-wpp {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99999999;
+  display: block;
+}
+
+@media screen and (max-width: 980px) {
+  .btn-wpp {
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+  }
+  .btn-wpp img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

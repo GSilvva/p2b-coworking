@@ -6,6 +6,10 @@ new Swiper(".home__banner__images .swiper", {
       nextEl: ".home__banner__images .controls__next",
       prevEl: ".home__banner__images .controls__prev",
     },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
 });
 
 new Swiper(".home__content .swiper", {

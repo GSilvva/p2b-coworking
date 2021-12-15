@@ -45,6 +45,10 @@ $celular: 480px;
     color: $white;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     & > main {
         padding: 140px 0 0 0;
@@ -814,6 +818,19 @@ button {
                     margin: 0 0 8px 0;
                 }
                 h4,
+                h4 * {
+                    text-align: left;
+                    font: 600 16px/160% $font;
+                    @media screen and (max-width: $tablet) {
+                        font-size: 15px;
+                    }
+                    a {
+                        transition: 300ms ease;
+                        &:hover {
+                            color: $lightBlue;
+                        }
+                    }
+                }
                 button {
                     text-align: left;
                     font: 600 16px/160% $font;
@@ -1135,7 +1152,7 @@ button {
         &__header {
             margin: 0 0 32px 0;
             position: sticky;
-            top: 116px;
+            top: 60px;
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
@@ -1410,6 +1427,13 @@ button {
             color: $pink;
             &:hover {
                 background: $pink;
+            }
+        }
+        &--lightBlue {
+            border-color: $lightBlue;
+            color: $lightBlue;
+            &:hover {
+                background: $lightBlue;
             }
         }
     }
@@ -1725,6 +1749,22 @@ button {
                     margin: 24px 0 0 0;
                 }
             }
+        }
+    }
+}
+
+.btn-wpp {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99999999;
+    display: block;
+    @media screen and (max-width: $tablet) {
+        bottom: 24px;
+        right: 24px;
+        width: 48px;
+        img {
+            width: 100%;
         }
     }
 }

@@ -74,6 +74,7 @@
                 h4 {
                     font: 800 24px/1 $font;
                     margin: 40px 0 32px 0;
+                    color: $lightBlue;
                     @media screen and (max-width: $tablet) {
                         margin: 32px 0 24px 0;
                         font-size: 20px;
@@ -112,8 +113,10 @@
                                     }
                                     img {
                                         margin: 0 12px 0 0;
+                                        opacity: .5;
                                     }
                                     span {
+                                        opacity: .5;
                                         font: 400 15px/1 $font;
                                     }
                                 }
@@ -170,7 +173,7 @@
         background: $blue;
         position: relative;
         z-index: 1;
-        height: 480px;
+        height: 360px;
         @media screen and (max-width: $tablet) {
             height: auto;
         }
@@ -290,9 +293,12 @@
             @media screen and (max-width: $tablet) {
                 margin: 24px 0 0 0;
             }
+            h1,
             h2,
             h3,
-            h4 {
+            h4,
+            h5,
+            h6 {
                 font-weight: 800;
                 margin: 0 0 32px 0;
                 @media screen and (max-width: $tablet) {
@@ -303,6 +309,18 @@
                 font: 800 26px/150% $font;
                 @media screen and (max-width: $tablet) {
                     font-size: 22px;
+                }
+            }
+            h5 {
+                font: 800 22px/150% $font;
+                @media screen and (max-width: $tablet) {
+                    font-size: 18px;
+                }
+            }
+            h6 {
+                font: 800 18px/150% $font;
+                @media screen and (max-width: $tablet) {
+                    font-size: 16px;
                 }
             }
             p {

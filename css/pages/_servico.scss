@@ -144,7 +144,7 @@
     &--home-office-profissional {
         .servico {
             &__banner__mosaico__dir h2 {
-                background: $pink;
+                background: $lightBlue;
             }
             &__beneficios {
                 header h2 {
@@ -154,14 +154,14 @@
                     .swiper-wrapper {
                         .swiper-slide {
                             figure {
-                                background: $pink;
+                                background: $lightBlue;
                             }
                         }
                     }
                 }
             }
             &__destaque {
-                background: $pink;
+                background: $lightBlue;
                 padding: 80px 0 330px 0;
                 margin: 0 0 -318px 0;
                 @media screen and (max-width: $tablet) {
@@ -172,20 +172,23 @@
         }
         .img-texto__carrossel {
             &::before {
-                background: linear-gradient(75deg, rgba(238, 60, 99, 0) 0%, rgba(238, 60, 99, 0.16) 100%);
+                background: linear-gradient(75deg, rgba(46, 168, 224, 0) 0%, rgba(46, 168, 224, 0.16) 100%);
             }
         }
         .button {
-            background: $pink;
+            background: $lightBlue;
         }
         .table__desk__header__card .button--outline:hover {
-            background: $pink;
+            background: $lightBlue;
+        }
+        .table__desk__title {
+            top: 96px;
         }
         .table__controls {
             input {
                 &:checked {
                     & ~ span:first-of-type {
-                        color: $pink;
+                        color: $lightBlue;
                         background: $white;
                     }
                     & ~ span:last-of-type {
@@ -199,7 +202,7 @@
                 }
                 &:last-of-type {
                     background: $white;
-                    color: $pink;
+                    color: $lightBlue;
                 }
             }
         }
