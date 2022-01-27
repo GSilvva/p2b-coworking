@@ -2484,7 +2484,7 @@ button {
   padding: 32px 0;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
-  z-index: 9999999;
+  z-index: 9999;
   position: fixed;
   left: 0;
   top: 0;
@@ -2756,6 +2756,10 @@ button {
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
   display: block;
+}
+
+.navbar__medias a:last-of-type img {
+  max-width: 20px;
 }
 
 .navbar__medias a:hover {
@@ -4752,7 +4756,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 999;
+  z-index: 999999;
   background: rgba(0, 0, 0, 0.64);
   display: -webkit-box;
   display: -ms-flexbox;
