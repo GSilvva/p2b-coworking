@@ -603,6 +603,14 @@
   background: linear-gradient(75deg, rgba(122, 87, 164, 0.16) 0%, rgba(122, 87, 164, 0) 100%) !important;
 }
 
+.servico--coworking .servico__banner__compl-text button {
+  color: #97C93C;
+}
+
+.servico--coworking .servico__banner__compl-text button svg path {
+  fill: #97C93C;
+}
+
 .servico--coworking .servico__banner__mosaico__dir h2 {
   background: #97C93C;
 }
@@ -641,6 +649,14 @@
   background: #97C93C;
 }
 
+.servico--sala-reuniao .servico__banner__compl-text button {
+  color: #054e8f;
+}
+
+.servico--sala-reuniao .servico__banner__compl-text button svg path {
+  fill: #054e8f;
+}
+
 .servico--sala-reuniao .servico__banner__mosaico__dir h2 {
   background: #054e8f;
 }
@@ -671,6 +687,14 @@
 
 .servico--sala-reuniao ::selection {
   background: #054e8f;
+}
+
+.servico--escritorio-virtual .servico__banner__compl-text button {
+  color: #F8981C;
+}
+
+.servico--escritorio-virtual .servico__banner__compl-text button svg path {
+  fill: #F8981C;
 }
 
 .servico--escritorio-virtual .servico__banner__mosaico__dir h2 {
@@ -740,6 +764,14 @@
   background: #F8981C;
 }
 
+.servico--home-office-profissional .servico__banner__compl-text button {
+  color: #2ea8e0;
+}
+
+.servico--home-office-profissional .servico__banner__compl-text button svg path {
+  fill: #2ea8e0;
+}
+
 .servico--home-office-profissional .servico__banner__mosaico__dir h2 {
   background: #2ea8e0;
 }
@@ -807,6 +839,14 @@
   background: #ee3c63;
 }
 
+.servico--salas-privativas .servico__banner__compl-text button {
+  color: #7a57a4;
+}
+
+.servico--salas-privativas .servico__banner__compl-text button svg path {
+  fill: #7a57a4;
+}
+
 .servico--salas-privativas .servico__banner__mosaico__dir h2 {
   background: #7a57a4;
 }
@@ -835,6 +875,12 @@
 
 .servico--salas-privativas .img-texto__texto h2 strong {
   display: block;
+}
+
+.servico--salas-privativas .img-texto__texto p strong {
+  color: #FFFFFF;
+  padding: 2px 4px;
+  background: #7a57a4;
 }
 
 .servico--salas-privativas .img-texto__carrossel::before {
@@ -1113,18 +1159,35 @@
   margin: 0 0 24px 0;
 }
 
-.servico__banner__compl-text p:not(:last-of-type) {
+.servico__banner__compl-text p {
   margin: 0 0 24px 0;
 }
 
-.servico__banner__compl-text p:last-of-type {
+.servico__banner__compl-text button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: 700 18px/1 "Manrope", sans-serif;
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
   margin: 0 0 96px 0;
 }
 
 @media screen and (max-width: 980px) {
-  .servico__banner__compl-text p:last-of-type {
+  .servico__banner__compl-text button {
     margin: 0;
   }
+}
+
+.servico__banner__compl-text button:hover {
+  opacity: .7;
+}
+
+.servico__banner__compl-text button svg {
+  margin: 0 12px 0 0;
 }
 
 .servico .button--outline {
@@ -4680,6 +4743,79 @@ button {
   }
   .btn-wpp img {
     width: 100%;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.64);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 24px;
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal article {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.modal article section {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.modal article section iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal article section button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  -webkit-transform: translate(100%, -100%);
+          transform: translate(100%, -100%);
+}
+
+@media screen and (max-width: 980px) {
+  .modal article section button {
+    top: -16px;
+    right: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal article section button {
+    max-width: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

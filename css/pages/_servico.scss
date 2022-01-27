@@ -1,5 +1,11 @@
 .servico {
     &--coworking {
+        .servico__banner__compl-text button {
+            color: $green;
+            svg path {
+                fill: $green;
+            }
+        }
         .servico {
             &__banner__mosaico__dir h2 {
                 background: $green;
@@ -38,6 +44,12 @@
         }
     }
     &--sala-reuniao {
+        .servico__banner__compl-text button {
+            color: $blue;
+            svg path {
+                fill: $blue;
+            }
+        }
         .servico {
             &__banner__mosaico__dir h2 {
                 background: $blue;
@@ -73,6 +85,12 @@
         }
     }
     &--escritorio-virtual {
+        .servico__banner__compl-text button {
+            color: $orange;
+            svg path {
+                fill: $orange;
+            }
+        }
         .servico {
             &__banner__mosaico__dir h2 {
                 background: $orange;
@@ -142,6 +160,12 @@
         }
     }
     &--home-office-profissional {
+        .servico__banner__compl-text button {
+            color: $lightBlue;
+            svg path {
+                fill: $lightBlue;
+            }
+        }
         .servico {
             &__banner__mosaico__dir h2 {
                 background: $lightBlue;
@@ -211,6 +235,12 @@
         }
     }
     &--salas-privativas {
+        .servico__banner__compl-text button {
+            color: $purple;
+            svg path {
+                fill: $purple;
+            }
+        }
         .servico {
             &__banner__mosaico__dir h2 {
                 background: $purple;
@@ -239,6 +269,13 @@
                 font-weight: 300;
                 strong {
                     display: block;
+                }
+            }
+            p {
+                strong {
+                    color: $white;
+                    padding: 2px 4px;
+                    background: $purple;
                 }
             }
         }
@@ -435,14 +472,22 @@
                 margin: 0 0 24px 0;
             }
             p {
-                &:not(:last-of-type) {
-                    margin: 0 0 24px 0;
+                margin: 0 0 24px 0;
+            }
+            button {
+                display: flex;
+                align-items: center;
+                font: 700 18px/1 $font;
+                transition: 400ms ease;
+                margin: 0 0 96px 0;
+                @media screen and (max-width: $tablet) {
+                    margin: 0;
                 }
-                &:last-of-type {
-                    margin: 0 0 96px 0;
-                    @media screen and (max-width: $tablet) {
-                        margin: 0;
-                    }
+                &:hover {
+                    opacity: .7;
+                }
+                svg {
+                    margin: 0 12px 0 0;
                 }
             }
         }

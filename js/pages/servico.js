@@ -8,3 +8,38 @@ if(document.querySelector(".servico__beneficios")) {
         });
     }
 }
+
+// VIDEO
+const btnOpenVideo = document.querySelectorAll(".servico__banner__compl-text button");
+const modal = document.querySelector(".modal");
+const video = modal.querySelector("iframe");
+const closeModal = modal.querySelector("button");
+const container = modal.querySelector("article");
+
+function pauseYoutubeVideo() {
+  let ysrc = video.src;
+  let newysrc = ysrc.replace("?autoplay=1", "");
+  video.src = newysrc;
+}
+
+btnOpenVideo.forEach(btn => {
+    btn.addEventListener("click", () => {
+        modal.classList.add("open");
+        video.src += "?autoplay=1";
+    });
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("open");
+  pauseYoutubeVideo();
+});
+
+modal.addEventListener("click", () => {
+  modal.classList.remove("open");
+  pauseYoutubeVideo();
+});
+
+container.addEventListener("click", e => {
+  e.stopPropagation();
+  e.stopImmediatePropagation();
+});
